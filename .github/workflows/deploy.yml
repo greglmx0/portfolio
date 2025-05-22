@@ -39,7 +39,7 @@ jobs:
           # Copiez d'autres fichiers nécessaires comme nginx.conf si utilisé
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: portfolio
           path: deploy/
