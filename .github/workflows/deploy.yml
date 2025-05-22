@@ -20,6 +20,12 @@ jobs:
           cache: 'npm'
           cache-dependency-path: 'package-lock.json'
 
+      - name: Update lockfile if needed
+        run: npm install
+
+      - name: Verify lockfile
+        run: npm ci --dry-run
+
       - name: Install dependencies
         run: npm ci
 
