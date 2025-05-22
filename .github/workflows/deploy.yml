@@ -38,14 +38,10 @@ jobs:
 
       - name: Prepare deployment files
         run: |
+          tar --exclude='node_modules' --exclude='.git' --exclude='.github' --exclude='.output' --exclude='.nuxt' -czf deploy.tar.gz .
           mkdir -p deploy
-          cp -r . deploy/
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: portfolio
-          path: deploy/
+          tar -xzf deploy.tar.gz -C deploy/
+          rm deploy.tar.gz
 
   deploy:
     needs: build
