@@ -60,6 +60,12 @@ jobs:
           name: portfolio
           path: ./deploy
 
+      - name: show user and host info
+        run: |
+          echo "VPS_HOST: ${{ secrets.VPS_HOST }}"
+          echo "VPS_USERNAME: ${{ secrets.VPS_USERNAME }}"
+          echo "VPS_PORT: ${{ secrets.VPS_PORT }}"
+
       - name: Deploy to VPS
         uses: appleboy/scp-action@master
         with:
