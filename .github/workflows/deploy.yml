@@ -38,10 +38,11 @@ jobs:
 
       - name: Prepare deployment files
         run: |
-          tar --exclude='node_modules' --exclude='.git' --exclude='.github' --exclude='.output' --exclude='.nuxt' -czf deploy.tar.gz .
+          mkdir -p ../temp_deploy
+          cp -r .output public Dockerfile.prod docker-compose.prod.yml nuxt.config.ts package.json package-lock.json ../temp_deploy/
           mkdir -p deploy
-          tar -xzf deploy.tar.gz -C deploy/
-          rm deploy.tar.gz
+          mv ../temp_deploy/* deploy/
+          rm -rf ../temp_deploy
 
   deploy:
     needs: build
