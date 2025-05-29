@@ -36,8 +36,8 @@ jobs:
 
       - name: Prepare deployment files
         run: |
-          mkdir -p deploy
-          cp -r .output public Dockerfile.prod docker-compose.prod.yml nuxt.config.ts package.json package-lock.json deploy/
+          mkdir deploy
+          cp -r . deploy/
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
