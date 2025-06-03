@@ -6,11 +6,11 @@
       <div class="col-span-2 md:col-span-1">
         <CvCard>
           <div class="flex-1">
-            <div class="flex flex-col items-center gap-4 md:flex-row md:items-start">
+            <div class="flex flex-col items-center gap-4 sm:flex-row">
               <embed
                 src="/img/moi-bierre.JPEG"
                 alt="Grégoire Lamoureux"
-                class="Justify-self-center mb-4 h-32 w-32 rounded-lg object-cover md:mb-0 md:mr-6"
+                class="mb-4 h-32 w-32 rounded-lg object-cover md:mb-0 md:mr-6"
               />
               <div class="flex flex-col items-center md:items-start">
                 <h1 class="text-3xl font-bold text-gray-800">Grégoire Lamoureux</h1>
@@ -38,11 +38,7 @@
             </PIcone>
             <PIcone name="mdi:github" class="mt-4">
               <p class="gap-4 text-sm text-gray-600">
-                <span>
-                  <a target="_blank" href="https://github.com/greglmx0" class="text-blue-700"
-                    >github.com/greglmx0</a
-                  ></span
-                >
+                <span> <a target="_blank" href="https://github.com/greglmx0" class="text-blue-700">greglmx0</a></span>
               </p>
             </PIcone>
             <PIcone name="skill-icons:linkedin" class="mt-4">
@@ -76,38 +72,28 @@
         </CvCard>
       </div>
       <CvCard class="col-span-2 md:col-span-1">
-        <div class="mb-8 flex flex-col items-center gap-6 md:w-64 md:flex-row md:items-start md:gap-8">
-          <aside class="flex w-full flex-col gap-4">
-            <section>
-              <h2 class="mb-2 font-semibold text-gray-700">Compétences techniques</h2>
-              <div>
-                <PBadge
-                  v-for="skill in techSkills"
-                  :key="skill.name"
-                  :text="skill.name"
-                  :icon="skill.icon"
-                  class="m-1"
-                />
-              </div>
-            </section>
-            <!-- <section>
-              <h2 class="font-semibold text-gray-700">Langues</h2>
-              <ul class="ml-5 mt-1 list-disc text-gray-600">
-                <li>Français (natif)</li>
-                <li>Anglais</li>
-              </ul>
-            </section>
-            <section>
-              <h2 class="font-semibold text-gray-700">Centres d’intérêt</h2>
-              <ul class="ml-5 mt-1 list-disc text-gray-600">
-                <li>Programmation</li>
-                <li>Vélo</li>
-                <li>Cuisine</li>
-                <li>Musique (Guitare débutant)</li>
-              </ul>
-            </section> -->
-          </aside>
-        </div>
+        <aside class="w-full md:max-w-sm">
+          <h2 class="mb-2 font-semibold text-gray-700">Compétences techniques</h2>
+          <div class="mb-2 flex w-full flex-wrap justify-center gap-2">
+            <PBadge v-for="skill in techSkills" :key="skill.name" :text="skill.name" :icon="skill.icon" />
+          </div>
+          <section class="mt-4">
+            <h2 class="font-semibold text-gray-700">Langues</h2>
+            <ul class="ml-5 mt-1 list-disc text-gray-600">
+              <li>Français (natif)</li>
+              <li>Anglais</li>
+            </ul>
+          </section>
+          <section class="mt-4">
+            <h2 class="font-semibold text-gray-700">Centres d’intérêt</h2>
+            <ul class="ml-5 mt-1 list-disc text-gray-600">
+              <li>Programmation</li>
+              <li>Vélo</li>
+              <li>Cuisine</li>
+              <li>Musique (Guitare débutant)</li>
+            </ul>
+          </section>
+        </aside>
       </CvCard>
       <CvCard class="col-span-2">
         <section class="mb-8">
