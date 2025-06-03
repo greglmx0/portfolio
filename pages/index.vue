@@ -95,58 +95,57 @@
           </section>
         </aside>
       </CvCard>
+
       <CvCard class="col-span-2">
-        <section class="mb-8">
-          <h2 class="text-xl font-bold text-gray-800">Expériences professionnelles</h2>
-          <div class="mt-3">
-            <h3 class="font-semibold text-gray-700">Eiffage Énergie Systèmes (AIIS) | Cesson-Sévigné</h3>
-            <p class="text-sm italic text-gray-600">Janvier 2023 - Août 2025 (Alternance 2 ans)</p>
-            <ul class="ml-5 mt-1 list-disc text-gray-600">
-              <li>Développement de plateformes Smart City : APIs (NestJS), interfaces utilisateur (Vue.js).</li>
-              <li>Supervision temps réel de capteurs LoRa, documentation et accompagnement utilisateurs.</li>
-              <li>Création de pipelines avec Apache NiFi pour ingestion et normalisation de données.</li>
-              <li>Environnement : IoT (LoRa, MQTT), ETL (NiFi), backend (NestJS), frontend (Vue.js), SQL/NoSQL.</li>
-              <li>Secteurs : Smart City, transition énergétique, interopérabilité des systèmes.</li>
-            </ul>
-          </div>
-          <div class="mt-4">
-            <h3 class="font-semibold text-gray-700">Interroll | Saint-Pol-de-Léon (29250)</h3>
-            <p class="text-sm italic text-gray-600">Sept 2021 - Sept 2022 (Alternance 1 an)</p>
-            <ul class="ml-5 mt-1 list-disc text-gray-600">
-              <li>Programme de détection de pannes (Python &amp; C#).</li>
-            </ul>
-          </div>
-        </section>
+        <h2 class="mb-6 text-xl font-bold text-gray-800">Expériences professionnelles</h2>
+        <PTimeline
+          date="Janvier 2023 - Août 2025 (Alternance 2 ans)"
+          title="Eiffage Énergie Systèmes (AIIS) | Cesson-Sévigné"
+        >
+          <ul class="ml-5 mt-1 list-disc text-gray-600">
+            <li>Développement de plateformes Smart City : APIs (NestJS), interfaces utilisateur (Vue.js).</li>
+            <li>Supervision temps réel de capteurs LoRa, documentation et accompagnement utilisateurs.</li>
+            <li>Création de pipelines avec Apache NiFi pour ingestion et normalisation de données.</li>
+            <li>Environnement : IoT (LoRa, MQTT), ETL (NiFi), backend (NestJS), frontend (Vue.js), SQL/NoSQL.</li>
+            <li>Secteurs : Smart City, transition énergétique, interopérabilité des systèmes.</li>
+          </ul>
+        </PTimeline>
+        <PTimeline date="Sept 2021 - Sept 2022" title="Interroll | Saint-Pol-de-Léon (29250)">
+          <p>Programme de détection de pannes (Python & C#).</p>
+        </PTimeline>
       </CvCard>
       <CvCard class="col-span-2">
-        <section class="mb-8">
-          <h2 class="text-xl font-bold text-gray-800">Formation</h2>
-          <ul class="ml-5 mt-3 list-disc text-gray-700">
-            <li>
-              <strong>2022 - 2025&nbsp;:</strong> Titre RNC niveau 7 «Architecte Logiciels &amp; Développeur
-              d’Applications» (Epitech Rennes, MSc IoT)<br />
-              <span class="text-sm text-gray-500"
-                >Conception de systèmes connectés, gestion temps réel, LoRaWAN, architectures embarquées.</span
-              >
-              <ul class="list-circle ml-5 mt-1 text-sm text-gray-600">
-                <li>Project Data Immobilier : analyse &amp; visualisation de données environnementales.</li>
-                <li>CMS personnalisé (Nuxt.js, Adonis.js, SQL).</li>
-                <li>App de trajectographie (Python Flask, Angular).</li>
-              </ul>
-            </li>
-            <li class="mt-2">
-              <strong>2021 - 2022&nbsp;:</strong> Licence pro Ingénierie des Systèmes Automatisés &amp; Robotique (ISAR)
-              - IUT Rennes<br />
-              <span class="text-sm text-gray-500"
-                >Programmation industrie : ST, Grafcet, Ladder. Logiciels : Tia Portal, Unity XLS.</span
-              >
-            </li>
-            <li class="mt-2">
-              <strong>2019 - 2021&nbsp;:</strong> BTS CRSA (Conception &amp; Réalisation de Systèmes Automatiques) -
-              Lycée Saint-Nicolas, Paris 6
-            </li>
+        <h2 class="mb-6 text-xl font-bold text-gray-800">Formation</h2>
+
+        <PTimeline
+          date="2022 - 2025"
+          title="Titre RNCP niveau 7 « Architecte Logiciels & Développeur d’Applications » (Epitech Rennes, MSc IoT)"
+        >
+          <p class="ml-2 text-gray-600">
+            Conception de systèmes connectés, gestion temps réel, LoRaWAN, architectures embarquées.
+          </p>
+          <ul class="ml-5 mt-2 list-disc text-gray-600">
+            <li>Project Data Immobilier : analyse & visualisation de données environnementales.</li>
+            <li>CMS personnalisé (Nuxt.js, Adonis.js, SQL).</li>
+            <li>App de trajectographie (Python Flask, Angular).</li>
           </ul>
-        </section>
+        </PTimeline>
+
+        <PTimeline
+          date="2021 - 2022"
+          title="Licence pro Ingénierie des Systèmes Automatisés & Robotique (ISAR) – IUT Rennes"
+        >
+          <p class="ml-2 text-gray-600">
+            Programmation industrie : ST, Grafcet, Ladder. Logiciels : Tia Portal, Unity XLS.
+          </p>
+        </PTimeline>
+
+        <PTimeline
+          date="2019 - 2021"
+          title="BTS CRSA (Conception & Réalisation de Systèmes Automatiques) – Lycée Saint-Nicolas, Paris 6"
+        >
+          <p class="ml-2 text-gray-600">Formation généraliste en automatisme et robotique industrielle.</p>
+        </PTimeline>
       </CvCard>
     </div>
   </main>
@@ -156,6 +155,7 @@
 import CvCard from '~/components/CvCard.vue'
 import PIcone from '~/components/ui/PIcone.vue'
 import PBadge from '~/components/ui/PBadge.vue'
+import PTimeline from '~/components/data/PTimeline.vue'
 
 const techSkills: {
   name: string
