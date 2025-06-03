@@ -74,24 +74,27 @@
       <CvCard class="col-span-2 md:col-span-1">
         <aside class="w-full md:max-w-sm">
           <h2 class="mb-2 font-semibold text-gray-700">Compétences techniques</h2>
-          <div class="mb-2 flex w-full flex-wrap justify-center gap-2">
+          <div class="mt-4 flex flex-wrap gap-2">
             <PBadge v-for="skill in techSkills" :key="skill.name" :text="skill.name" :icon="skill.icon" />
           </div>
+
           <section class="mt-4">
             <h2 class="font-semibold text-gray-700">Langues</h2>
-            <ul class="ml-5 mt-1 list-disc text-gray-600">
-              <li>Français (natif)</li>
-              <li>Anglais</li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <PBadge text="Français (natif)" color="gray" />
+              <PBadge text="Anglais" color="gray" />
+            </div>
           </section>
+
           <section class="mt-4">
             <h2 class="font-semibold text-gray-700">Centres d’intérêt</h2>
-            <ul class="ml-5 mt-1 list-disc text-gray-600">
-              <li>Programmation</li>
-              <li>Vélo</li>
-              <li>Cuisine</li>
-              <li>Musique (Guitare débutant)</li>
-            </ul>
+            <div class="mt-4 flex flex-wrap gap-2">
+              <PBadge text="Programmation" color="gray" icon="mdi:code-json" />
+              <PBadge text="Vélo" color="gray" icon="material-symbols:directions-bike" />
+              <PBadge text="Cuisine" color="gray" icon="mdi:food" />
+              <PBadge text="Musique" color="gray" icon="mdi:music" />
+              <PBadge text="Voyages" color="gray" icon="mdi:airplane" />
+            </div>
           </section>
         </aside>
       </CvCard>
