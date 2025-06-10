@@ -102,50 +102,134 @@
       <CvCard class="col-span-2">
         <h2 class="mb-6 text-xl font-bold text-gray-800">Expériences professionnelles</h2>
         <PTimeline
-          date="Janvier 2023 - Août 2025 (Alternance 2 ans)"
-          title="Eiffage Énergie Systèmes (AIIS) | Cesson-Sévigné"
+          date="Janvier 2023 - Août 2025 (32 mois en alternance)"
+          title="Développeur Fullstack IoT | Eiffage Énergie Systèmes - AIIS"
+          subtitle="Cesson-Sévigné | Smart City & Solutions Connectées"
         >
-          <ul class="ml-5 mt-1 list-disc text-gray-600">
-            <li>Développement de plateformes Smart City : APIs (NestJS), interfaces utilisateur (Vue.js).</li>
-            <li>Supervision temps réel de capteurs LoRa, documentation et accompagnement utilisateurs.</li>
-            <li>Création de pipelines avec Apache NiFi pour ingestion et normalisation de données.</li>
-            <li>Environnement : IoT (LoRa, MQTT), ETL (NiFi), backend (NestJS), frontend (Vue.js), SQL/NoSQL.</li>
-            <li>Secteurs : Smart City, transition énergétique, interopérabilité des systèmes.</li>
+          <p class="mb-2 text-gray-600">
+            Alternance au sein de l'équipe AIIS (Architecture, Innovation, Ingénierie et Systèmes) dédiée aux solutions
+            Smart City. Participation active au développement de plateformes IoT pour la gestion intelligente des
+            infrastructures urbaines.
+          </p>
+          <h4 class="mt-4 font-semibold text-gray-800">Missions principales :</h4>
+          <ul class="ml-5 mt-2 list-disc text-gray-600">
+            <li>
+              <strong>Développement de plateformes Smart City</strong> : Conception d'APIs robustes (NestJS) et
+              d'interfaces utilisateur intuitives (Vue.js) pour la supervision d'infrastructures urbaines connectées.
+            </li>
+            <li>
+              <strong>Gestion de l'écosystème IoT</strong> : Supervision temps réel de capteurs LoRa, traitement des
+              flux MQTT et garantie de l'interopérabilité des systèmes.
+            </li>
+            <li>
+              <strong>Ingénierie des données</strong> : Création et optimisation de pipelines d'ingestion (Apache NiFi)
+              pour la normalisation et la valorisation des données multi-sources.
+            </li>
+            <li>
+              <strong>Accompagnement technique</strong> : Rédaction de documentation et formation des utilisateurs.
+            </li>
+            <li>
+              <strong>Veille et innovation</strong> : Participation active à la R&D sur les technologies Smart City et
+              transition énergétique.
+            </li>
+          </ul>
+
+          <h4 class="mt-4 font-semibold text-gray-800">Réalisations clés :</h4>
+          <ul class="ml-5 mt-2 list-disc text-gray-600">
+            <li>Déploiement d'une solution complète de monitoring urbain intégrant 2000+ capteurs LoRa</li>
+            <li>
+              Contribution à des projets majeurs avec des partenaires publics et privés (collectivités, industriels)
+            </li>
           </ul>
         </PTimeline>
-        <PTimeline date="Sept 2021 - Sept 2022" title="Interroll | Saint-Pol-de-Léon (29250)">
-          <p>Programme de détection de pannes (Python & C#).</p>
+        <PTimeline
+          date="Septembre 2021 - Septembre 2022 (Alternance 1 an)"
+          title="Interroll | Saint-Pol-de-Léon (29250)"
+        >
+          <p>Programme de détection de pannes (Python et C#) pour des cartes de contrôle de convoyeurs.</p>
+          <ul class="ml-5 mt-1 list-disc text-gray-600">
+            <li>Analyse des données de fonctionnement des cartes.</li>
+            <li>Développement d'un programme de détection de pannes.</li>
+            <li>Tests et validation du programme sur les cartes de contrôle.</li>
+          </ul>
         </PTimeline>
       </CvCard>
       <CvCard class="col-span-2">
         <h2 class="mb-6 text-xl font-bold text-gray-800">Formation</h2>
 
         <PTimeline
-          date="2022 - 2025"
-          title="Titre RNCP niveau 7 « Architecte Logiciels & Développeur d’Applications » (Epitech Rennes, MSc IoT)"
+          date="Septembre 2022 - Aout 2025 (Alternance 3 ans)"
+          title="Master of Science IoT - Architecte Logiciel & Développeur d'Applications"
+          subtitle="Epitech Rennes | RNCP Niveau 7 (Bac+5)"
         >
           <p class="ml-2 text-gray-600">
-            Conception de systèmes connectés, gestion temps réel, LoRaWAN, architectures embarquées.
+            Formation spécialisationn en systèmes connectés (IoT) et traitement de données, avec une pédagogie par
+            projets et une approche professionnelle en alternance.
+          </p>
+          <p class="ml-2 mt-2 text-gray-600">
+            Compétences clés : Conception de systèmes embarqués, gestion temps réel, protocoles IoT (LoRaWAN),
+            architectures distribuées, analyse de données.
           </p>
           <ul class="ml-5 mt-2 list-disc text-gray-600">
-            <li>Project Data Immobilier : analyse & visualisation de données environnementales.</li>
-            <li>CMS personnalisé (Nuxt.js, Adonis.js, SQL).</li>
-            <li>App de trajectographie (Python Flask, Angular).</li>
+            <li>
+              <strong>Projet Data Immobilier</strong> : Analyse et visualisation de données environnementales pour le
+              secteur immobilier.
+            </li>
+            <li>
+              <strong>Développement d'un CMS</strong> : Solution complète avec Nuxt.js (frontend), Adonis.js (backend)
+              et base de données SQL.
+            </li>
+            <li>
+              <strong>Application de trajectographie</strong> : Solution complète avec :
+              <ul class="ml-5 mt-1 list-disc">
+                <li>Backend en Python (Flask)</li>
+                <li>Frontend en Angular</li>
+                <li>Cartographie interactive avec points d'intérêt</li>
+                <li>Filtrage par type d'activité</li>
+                <li>Calcul d'itinéraires multimodaux (voiture, vélo, piéton)</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Projet de fin d'études</strong> : Projet d'envergure sur 18 mois incluant analyse des besoins,
+              design, développement et travail en équipe.
+            </li>
           </ul>
+          <!-- <p class="ml-2 mt-3 text-sm text-gray-500">
+            <em
+              >Formation en alternance avec certification professionnelle RNCP Niveau 7 (Bac+5) - Titre d'Architecte de
+              Systèmes d'Information (code RNCP 38114)</em
+            >
+          </p> -->
         </PTimeline>
 
         <PTimeline
-          date="2021 - 2022"
-          title="Licence pro Ingénierie des Systèmes Automatisés & Robotique (ISAR) – IUT Rennes"
+          date="2023-2024"
+          title="Licence Pro Mécatronique & Robotique - Parcours ISAR (Ingénierie des Systèmes Automatisés et Robotisés)"
+          subtitle="IUT Rennes 1"
         >
-          <p class="ml-2 text-gray-600">
-            Programmation industrie : ST, Grafcet, Ladder. Logiciels : Tia Portal, Unity XLS.
+          <p class="text-gray-600">
+            Formation spécialisée en automatismes industriels et robotique, axée sur la conception de systèmes
+            pluritechnologiques. Programme intensif combinant cours théoriques et mise en pratique sur plateaux
+            techniques industriels.
+          </p>
+
+          <p class="mt-3 text-gray-600">
+            <strong>Compétences clés :</strong> Programmation de systèmes automatisés, robotique industrielle, vision
+            par ordinateur, commande et contrôle de processus, gestion de projets pluritechnologiques.
+          </p>
+
+          <p class="mt-3 text-gray-600">
+            <strong>Environnement technique :</strong> Travail sur plateaux robotiques équipés de technologies
+            industrielles (ABB, Siemens, Fanuc, Schneider Electric) et sur des projets de développement de systèmes
+            automatisés. Utilisation de logiciels de simulation et de programmation. Usine-école Smart Production pour
+            la formation aux technologies de l'usine du futur.
           </p>
         </PTimeline>
 
         <PTimeline
           date="2019 - 2021"
-          title="BTS CRSA (Conception & Réalisation de Systèmes Automatiques) – Lycée Saint-Nicolas, Paris 6"
+          title="BTS CRSA (Conception & Réalisation de Systèmes Automatiques)"
+          subtitle="Lycée Saint-Nicolas, Paris 6"
         >
           <p class="ml-2 text-gray-600">Formation généraliste en automatisme et robotique industrielle.</p>
         </PTimeline>
@@ -199,3 +283,9 @@ onMounted(() => {
   }, 50)
 })
 </script>
+
+<style scoped>
+li {
+  margin-bottom: 0.3rem;
+}
+</style>
