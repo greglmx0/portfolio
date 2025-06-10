@@ -13,6 +13,9 @@
         <h3 class="text-lg font-semibold text-gray-600">
           {{ props.title }}
         </h3>
+        <h4 v-if="props.subtitle" class="text-md text-gray-600">
+          {{ props.subtitle }}
+        </h4>
 
         <p class="ml-2 text-gray-600">
           <slot />
@@ -37,6 +40,7 @@ import PIcone from '../ui/PIcone.vue'
 export type TimelineEventProps = {
   date: string
   title: string
+  subtitle?: string
   type?: 'default' | 'end' | 'start'
   icon?: string
 }
@@ -50,6 +54,10 @@ const props: TimelineEventProps = defineProps({
     type: String,
     required: true,
   },
+  subtitle: {
+    type: String,
+    required: false,
+  },
   type: {
     type: String as () => 'default' | 'end' | 'start',
     /**
@@ -58,7 +66,6 @@ const props: TimelineEventProps = defineProps({
      * This property determines the styling of the event.
      * @returns {boolean} - Returns true if the value is valid, otherwise false.
      * @example
-     * // Valid usage
      * <PTimeline type="start" />
      * <PTimeline type="end" />
      * <PTimeline type="default" />
