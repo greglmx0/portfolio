@@ -66,7 +66,7 @@
               <li>Curieux</li>
               <li>Autonome</li>
               <li>Passionné par la création d'applis web modernes et évolutives</li>
-              <li>Bon relationnel</li>
+              <li>Travailleur en équipe</li>
             </ul>
           </section>
         </CvCard>
@@ -158,8 +158,8 @@
         <h2 class="mb-6 text-xl font-bold text-gray-800">Formation</h2>
 
         <PTimeline
-          date="Septembre 2022 - Aout 2025 (Alternance 3 ans)"
-          title="Master of Science IoT - Architecte Logiciel & Développeur d'Applications"
+          date="2022 - 2025"
+          title="Master of Science - Architecte Logiciel & Développeur d'Applications"
           subtitle="Epitech Rennes | RNCP Niveau 7 (Bac+5)"
         >
           <p class="ml-2 text-gray-600">
