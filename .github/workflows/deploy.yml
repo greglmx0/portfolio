@@ -74,7 +74,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
           script: |
-            cd /var/www/html/portfolio/deploy
+            cd /var/www/html/portfolio
             docker compose -f docker-compose.prod.yml down
             docker compose -f docker-compose.prod.yml up -d
             docker system prune -f
