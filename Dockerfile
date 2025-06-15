@@ -1,22 +1,15 @@
-FROM node:22 AS builder
+FROM node:22-alpine
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY package.json ./
-RUN npm install
+COPY .output .output/
+COPY package*.json ./
 
-COPY . .
-RUN npm run build
+RUN npm install --omit=dev
 
-FROM node:22
-
-WORKDIR /app
-
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/.output ./output
-COPY --from=builder /app/package.json ./
-COPY --from=builder /app/nuxt.config.ts ./
+ENV NODE_ENV=production
+ENV NITRO_HOST=0.0.0.0
+ENV NITRO_PORT=3000
 
 EXPOSE 3000
-
-CMD ["npm", "run", "dev"]
+CMD ["node", ".output/server/index.mjs"]
