@@ -57,8 +57,9 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
-          source: './deploy'
+          source: './deploy/'
           target: '/var/www/html/portfolio'
+          strip_components: 1
           overwrite: true
 
       - name: Restart Docker containers
