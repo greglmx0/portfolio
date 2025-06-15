@@ -33,12 +33,16 @@ jobs:
           mkdir -p deploy
           cp -R .output package.json package-lock.json Dockerfile.prod docker-compose.prod.yml deploy/
 
+      - name: echo files in deploy directory
+        run: ls -la deploy/
+
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: portfolio-build
           path: deploy/
           retention-days: 1
+          include-hidden-files: true
 
   deploy:
     needs: build
@@ -57,7 +61,7 @@ jobs:
           username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.VPS_PORT }}
-          source: './deploy/'
+          source: './deploy/*'
           target: '/var/www/html/portfolio'
           strip_components: 1
           overwrite: true
