@@ -15,7 +15,7 @@
               <div class="flex flex-col items-center md:items-start">
                 <h1 class="text-3xl font-bold text-gray-800">Grégoire Lamoureux</h1>
                 <h2 class="mt-1 text-xl font-semibold text-gray-700">{{ displayedJobTitle }}</h2>
-                <p class="mt-1 text-gray-600">23 ans - Permis B - véhiculé</p>
+                <p class="mt-1 text-gray-600">{{ age }} ans - Permis B - véhiculé</p>
                 <p class="mt-1 text-gray-600">Rennes et alentours</p>
               </div>
             </div>
@@ -101,13 +101,35 @@
 
       <CvCard class="col-span-2">
         <h2 class="mb-6 text-xl font-bold text-gray-800">Expériences professionnelles</h2>
+
+        <PTimeline date="Septembre 2025 - Présent" title="Développeur Full Stack | Eiffage Énergie Systèmes - A2IS">
+          <p class="mb-2 text-gray-600">
+            Intégré à l'équipe A2IS (Architecture, Innovation, Ingénierie et Systèmes) au sein du pôle Smart City &
+            Solutions Connectées. Contribution au développement de solutions IoT innovantes pour la gestion intelligente
+            des infrastructures urbaines.
+          </p>
+          <h4 class="mt-4 font-semibold text-gray-800">Missions principales :</h4>
+          <ul class="ml-5 mt-2 list-disc text-gray-600">
+            <li>
+              <strong>Développement Fullstack</strong> : Conception et implémentation d'APIs (NestJS) et d'interfaces
+              utilisateur (Vue.js/Nuxt.js) pour la supervision et le contrôle des infrastructures connectées.
+            </li>
+          </ul>
+
+          <h4 class="mt-4 font-semibold text-gray-800">Réalisations clés :</h4>
+          <ul class="ml-5 mt-2 list-disc text-gray-600">
+            <li>Participation au déploiement de solutions IoT intégrant plus de 3000 capteurs LoRa</li>
+            <li>
+              Collaboration avec des partenaires publics et privés pour le développement de projets Smart City innovants
+            </li>
+          </ul>
+        </PTimeline>
         <PTimeline
           date="Janvier 2023 - Août 2025 (32 mois en alternance)"
-          title="Développeur Fullstack IoT | Eiffage Énergie Systèmes - AIIS"
           subtitle="Cesson-Sévigné | Smart City & Solutions Connectées"
         >
           <p class="mb-2 text-gray-600">
-            Alternance au sein de l'équipe AIIS (Architecture, Innovation, Ingénierie et Systèmes) dédiée aux solutions
+            Alternance au sein de l'équipe A2IS (Architecture, Innovation, Ingénierie et Systèmes) dédiée aux solutions
             Smart City. Participation active au développement de plateformes IoT pour la gestion intelligente des
             infrastructures urbaines.
           </p>
@@ -273,6 +295,7 @@ const techSkills: {
 
 const jobTitle: Ref<string> = ref('Développeur Fullstack')
 const displayedJobTitle: Ref<string> = ref('D')
+const age: number = new Date().getFullYear() - new Date('10/10/2001').getFullYear()
 
 onMounted(() => {
   setInterval(() => {

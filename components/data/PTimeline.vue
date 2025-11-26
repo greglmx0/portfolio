@@ -10,7 +10,7 @@
         {{ props.date }}
       </time>
       <div class="ml-4 mt-2 flex flex-col gap-2">
-        <h3 class="text-lg font-semibold text-gray-600">
+        <h3 v-if="props.title" class="text-lg font-semibold text-gray-600">
           {{ props.title }}
         </h3>
         <h4 v-if="props.subtitle" class="text-md text-gray-600">
@@ -39,7 +39,7 @@ import PIcone from '../ui/PIcone.vue'
  */
 export type TimelineEventProps = {
   date: string
-  title: string
+  title?: string
   subtitle?: string
   type?: 'default' | 'end' | 'start'
   icon?: string
@@ -52,7 +52,7 @@ const props: TimelineEventProps = defineProps({
   },
   title: {
     type: String,
-    required: true,
+    required: false,
   },
   subtitle: {
     type: String,
