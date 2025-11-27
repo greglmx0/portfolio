@@ -1,0 +1,40 @@
+{
+  "gifts": [
+    {
+      "id": 1,
+      "price": 49.9,
+      "name": "Lampe frontale LED 400 lumens Noctila 400H Hybride rechargeable et piles",
+      "url": "https://www.decathlon.fr/p/mp/hacknite/lampe-frontale-led-400-lumens-noctila-400h-hybride-rechargeable-et-piles/_/R-p-f3f85c71-3751-4811-89f5-33245285dfae?mc=f3f85c71-3751-4811-89f5-33245285dfae_c1&c=noir",
+      "urlImage": "https://contents.mediadecathlon.com/m20493806/k$ee35e4545457f2f6add4ab65110ebf39/sq/lampe-frontale-led-400-lumens-noctila-400h-hybride-rechargeable-and-piles.jpg?format=auto&f=1200x1200",
+      "description": "Comme je suis un grand fan de randonnée / trail / course à pied, une lampe frontale est toujours utile pour les sorties nocturnes.",
+      "category": ["petit budget", "pratique"]
+    },
+    {
+      "id": 2,
+      "price": 100.0,
+      "name": "Casque à conduction osseuse (Exemples : OpenRun Noir)",
+      "url": "https://www.boulanger.com/ref/1211788?at_medium=affiliate&at_campaign=boulanger&at_type=64&at_identifier=1395037010&at_variant=EGC&eff_cpt=13467184&eff_sub1=ppr-fr-1810818436",
+      "urlImage": "https://boulanger.scene7.com/is/image/Boulanger/0810092679837_h_f_l_0?wid=1016&hei=1016&resMode=sharp2&op_usm=1.75,0.3,2,0&fmt=png-alpha",
+      "description": "Le fait d'écouter de la musique sans mettre des écouteurs est fou, j'ai envie d'essayer.",
+      "category": ["moyen budget", "technologie"]
+    },
+    {
+      "id": 3,
+      "price": 30.0,
+      "name": "Pompe à air électrique portable Xiaomi Mijia Air Pump 2",
+      "url": "https://www.mi.com/fr/product/xiaomi-portable-electric-air-compressor-2/",
+      "urlImage": "https://i05.appmifile.com/129_item_fr/30/08/2023/5945526a3753b63a51b5fdf36389898d.png?thumb=1&f=webp&q=85",
+      "description": "Petit cadeau pratique",
+      "category": ["petit budget", "pratique"]
+    },
+    {
+      "id": 30,
+      "price": 1281187.15,
+      "name": "Bague Glamira Bague Jerolin 28 crt",
+      "url": "https://www.glamira.fr/glamira-bague-jerolin.html?alloy=white-585&stone1=diamond-Brillant",
+      "urlImage": "https://cdn-media.glamira.com/media/product/newgeneration/view/1/sku/jerolin/diamond/diamond-Brillant_AAA/alloycolour/white.jpg",
+      "description": "Bague élégante en or blanc avec un diamant brillant, parfaite pour une occasion spéciale.",
+      "category": ["petit budget", "bijoux"]
+    }
+  ]
+}
